@@ -18,7 +18,7 @@ module.exports = [
       "quotes": ["error", "double"], // Automatically fixes inconsistent quote style (single or double)
       "semi": ["error", "always"], // Automatically adds missing semicolons
       "indent": ["error", 2], // Automatically fixes indentation
-      "no-console": "off", // Allows console logging (manual fix needed for avoiding excessive logs)
+      "no-console": 1, // Allows console logging (manual fix needed for avoiding excessive logs)
       "eol-last": ["error", "always"], // Automatically adds a newline at the end of files
       "space-infix-ops": ["error", { "int32Hint": false }], // Automatically ensures spaces around operators
       "no-multi-spaces": ["error", { "ignoreEOLComments": false }], // Automatically fixes multiple spaces between elements (including after dot notation)
