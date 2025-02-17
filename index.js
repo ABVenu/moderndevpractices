@@ -1,18 +1,18 @@
-const express = require("express");
-const connectToDB = require("./config/mongo.config");
-const app = express();
-console.log("Hi");
-console.log(Hi);
-let a = 10;
+const express = require("express")
+const connectToDB = require("./config/mongo.config")
+const app = express()
+   console.log("Hi")
+    console.log(Hi)
+     let a = 10
 if (process.env.NODE_ENV == "testing") {
-  require("dotenv").config({ path: ".env.testing" });
+  require("dotenv").config({ path: ".env.testing" })
 } else if (process.env.NODE_ENV == "production") {
-  require("dotenv").config({ path: ".env.production" });
+  require("dotenv").config({ path: ".env.production" })
 } else {
-  require("dotenv").config();
+  require("dotenv").config()
 }
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080
 app.use(express.json());
 
 app.get("/", (req, res) => {
