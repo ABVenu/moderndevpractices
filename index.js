@@ -1,9 +1,9 @@
-                           const express = require("express")
-                        const connectToDB = require("./config/mongo.config")
-const app = express()
-                        console.log("Hi")
-                             console.log(Hi)
-                let a = 10
+const express = require("express");
+const connectToDB = require("./config/mongo.config");
+const app = express();
+// console.log("Hi");
+// console.log(Hi);
+// let a = 10;
 // eslint-disable-next-line no-undef
 if (process.env.NODE_ENV == "testing") {
   require("dotenv").config({ path: ".env.testing" });
